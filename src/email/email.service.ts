@@ -3,6 +3,9 @@
 import { Injectable } from '@nestjs/common';
 import * as nodemailer from 'nodemailer';
 import * as dotenv from 'dotenv';
+import { expirar } from './helpers/cel/expiracao';
+import { confirmar } from './helpers/cel/confirmar';
+import { avancar } from './helpers/cel/avancar';
 
 dotenv.config(); // Carrega variáveis de ambiente do arquivo .env
 console.log(process.env.EMAIL_USER);
@@ -31,9 +34,7 @@ export class EmailService {
       from: process.env.EMAIL_USER,
       to: destinatarioEmail,
       subject: 'Confirmação de Inscrição',
-      text: `Olá ${destinatarioNome},\n\nVocê selecionou os seguintes cursos: ${cursosSelecionados.join(
-        ', ',
-      )}. Corpo do e-mail de confirmação`,
+      html: confirmar(destinatarioNome, cursosSelecionados).toString(),
     };
 
     return this.transporter.sendMail(mailOptions);
@@ -48,9 +49,7 @@ export class EmailService {
       from: process.env.EMAIL_USER,
       to: destinatarioEmail,
       subject: 'Aviso de Expiração',
-      text: `Olá ${destinatarioNome},\n\nVocê selecionou os seguintes cursos: ${cursosSelecionados.join(
-        ', ',
-      )}. Corpo do e-mail de aviso de expiração`,
+      html: expirar(destinatarioNome, cursosSelecionados).toString(),
     };
 
     return this.transporter.sendMail(mailOptions);
@@ -65,9 +64,7 @@ export class EmailService {
       from: process.env.EMAIL_USER,
       to: destinatarioEmail,
       subject: 'Avanço na Fila de Espera',
-      text: `Olá ${destinatarioNome},\n\nVocê selecionou os seguintes cursos: ${cursosSelecionados.join(
-        ', ',
-      )}. Corpo do e-mail de avanço na fila de espera`,
+      html: avancar(destinatarioNome, cursosSelecionados).toString(),
     };
 
     return this.transporter.sendMail(mailOptions);
