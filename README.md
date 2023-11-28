@@ -17,6 +17,9 @@ EMAIL_USER = "endereco@provedor.com.br";
 EMAIL_PASS = "A senha da conta de email"
 ```
 
+![Organização de pastas](https://github.com/Jorge-William/notificacao-via-email/assets/19416864/190c8e01-a993-4da8-8bff-651df88180ee)
+
+
 ## Rodando o app
 
 ```bash
@@ -30,11 +33,20 @@ $ yarn run start:dev
 
 ## Rotas
 
-Rota base:
+#### Rota base:
 
-http://localhost:3000/notificacao/
+localhost:3000/notificacao
 
-Avanço na fila:
+#### Avanço na fila:
 
-Expiração do tempo para inscrição:
+localhost:3000/notificacao/inscricao-liberada
+
+
+#### Expiração do tempo para inscrição:
+
 localhost:3000/notificacao/tempo-expirado
+
+
+#### Confirmação de inscrição(resumo dos cursos aos quais o usuário se inscreveu):
+
+localhost:3000/notificacao/confirmacao-inscricao
