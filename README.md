@@ -24,7 +24,7 @@ EMAIL_PASS="A senha da conta de email"
 ```bash
 # desenvolvimento watch mode
 $ yarn run start:dev
-
+```
 
 ## Rotas
 
