@@ -6,8 +6,8 @@ export class EmailController {
 
   @Get('tempo-expirado')
   async enviarEmailExpiracao() {
-    const destinatarioEmail = 'pedro.wallauschek@sinergiaeducacao.com.br';
-    const destinatarioNome = 'Pedro';
+    const destinatarioEmail = 'ojorgewilliamfurtado@gmail.com';
+    const destinatarioNome = 'Jorge';
     const cursosSelecionados = ['Capoeira', 'Ballet', 'Natação'];
 
     try {
@@ -25,8 +25,8 @@ export class EmailController {
 
   @Get('confirmacao-inscricao')
   async enviarEmailConfirmacao() {
-    const destinatarioEmail = 'pedro.wallauschek@sinergiaeducacao.com.br';
-    const destinatarioNome = 'Pedro';
+    const destinatarioEmail = 'ojorgewilliamfurtado@gmail.com';
+    const destinatarioNome = 'Jorge';
     const cursosSelecionados = ['Capoeira', 'Ballet', 'Natação'];
 
     try {
@@ -44,8 +44,8 @@ export class EmailController {
 
   @Get('inscricao-liberada')
   async enviarEmaiAvancoFila() {
-    const destinatarioEmail = 'pedro.wallauschek@sinergiaeducacao.com.br';
-    const destinatarioNome = 'Pedro';
+    const destinatarioEmail = 'ojorgewilliamfurtado@gmail.com';
+    const destinatarioNome = 'Jorge';
     const cursosSelecionados = ['Capoeira', 'Ballet', 'Natação'];
 
     try {
