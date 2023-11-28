@@ -26,10 +26,6 @@ EMAIL_PASS="A senha da conta de email"
 $ yarn run start:dev
 
 
-## Licença
-[MIT licensed](LICENSE).
-```
-
 ## Rotas
 
 #### Rota base:
