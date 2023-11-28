@@ -44,9 +44,9 @@ export class EmailController {
 
   @Get('inscricao-liberada')
   async enviarEmaiAvancoFila() {
-    const destinatarioEmail = 'ojorgewilliamfurtado@gmail.com';
-    const destinatarioNome = 'Jorge';
-    const cursosSelecionados = ['Capoeira', 'Ballet', 'Natação'];
+    const destinatarioEmail = 'pedro.wallauschek@sinergiaeducacao.com.br';
+    const destinatarioNome = 'Pedro Wallauschek';
+    const cursosSelecionados = ['Capoeira', 'Natação', 'Volei'];
 
     try {
       await this.emailService.enviarEmailAvancoFila(

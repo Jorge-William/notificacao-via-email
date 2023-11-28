@@ -50,8 +50,8 @@ export function confirmar(nome: string, cursos: string[]): string {
                     <td align="center">
                       <a href="https://www.cel.com.br/" target="_blank">
                         <img
-                          src="https://placehold.co/100"
-                          height="200px"
+                          src="https://sjc1.vultrobjects.com/sinergia-cdn/cel%20logo/Logo%20CEL%20Intercultural%20School_Colorido.png"
+                          height="100px"
                           style="margin-top: 50px;"
                         />
                       </a>
