@@ -48,9 +48,9 @@ export function confirmar(nome: string, cursos: string[]): string {
                 <table align="center" class="tabela-principal">
                   <tr>
                     <td align="center">
-                      <a href="https://www.cel.com.br/" target="_blank">
+                      <a href="https://liceufranco.com.br/" target="_blank">
                         <img
-                          src="./logo/logo franco Colorida Horizontal.png"
+                          src="https://sjc1.vultrobjects.com/sinergia-cdn/franco%20logo/logo%20franco%20Colorida%20Horizontal.png"
                           height="200px"
                           style="margin-top: 50px;"
                         />
