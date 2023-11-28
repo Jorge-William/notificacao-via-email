@@ -47,3 +47,11 @@ localhost:3000/notificacao/tempo-expirado
 #### Confirmação de inscrição(resumo dos cursos aos quais o usuário se inscreveu):
 
 localhost:3000/notificacao/confirmacao-inscricao
+
+
+## Imagens de exemplo
+
+![cel](https://github.com/Jorge-William/notificacao-via-email/assets/19416864/c336e3bc-d3b2-486e-963a-847e96131919)
+
+![franco](https://github.com/Jorge-William/notificacao-via-email/assets/19416864/d56173f7-b730-4b97-9111-8cbd1308a6da)
+
